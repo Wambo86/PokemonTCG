@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kartentresor – Pokémon</title>
+<meta name="description" content="Pokémon-Karten scannen, Sammlung speichern, Cardmarket-Preise sehen und Preis-Alarme setzen.">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="theme-color" content="#101626">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Kartentresor">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <h1 id="title">Sammlung</h1>
+  <div id="top-actions"></div>
+</header>
+
+<main id="view" tabindex="-1">
+  <p class="loading">Kartendatenbank wird geladen …</p>
+</main>
+
+<nav class="tabs" aria-label="Bereiche">
+  <a href="#scan" data-tab="scan"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3M4 12h16"/></svg><span>Scannen</span></a>
+  <a href="#sammlung" data-tab="sammlung"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="11" height="15" rx="1.5"/><path d="M9 21h9.5a1.5 1.5 0 0 0 1.5-1.5V7"/></svg><span>Sammlung</span></a>
+  <a href="#alarme" data-tab="alarme"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 1 1 12 0v5l1.5 2h-15L6 16ZM10 20.5a2 2 0 0 0 4 0"/></svg><span>Preis-Alarm</span></a>
+  <a href="#suche" data-tab="suche"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span>Alle Karten</span></a>
+</nav>
+
+<dialog id="sheet" class="sheet" aria-label="Kartendetails"></dialog>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="vendor/tesseract/tesseract.min.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>

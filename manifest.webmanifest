@@ -1,0 +1,16 @@
+{
+  "name": "Kartentresor – Pokémon",
+  "short_name": "Kartentresor",
+  "description": "Pokémon-Karten scannen, Sammlung speichern, Cardmarket-Preise sehen und Preis-Alarme setzen.",
+  "lang": "de",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#101626",
+  "theme_color": "#101626",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
